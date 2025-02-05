@@ -1,0 +1,138 @@
+/* Estilo del encabezado */
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y los botones a la derecha */
+    align-items: center; /* Centra verticalmente */
+    height: 100px;
+    padding-left: 20px;
+}
+
+/* Logo en el header */
+header img {
+    width: 200px;
+    height: auto;
+}
+
+/* Botones en el Header */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.btn, .btn-inicio {
+    background-color: #ff4d4d; /* Rojo vibrante */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn:hover, .btn-inicio:hover {
+    background-color: #e03e3e;
+    transform: scale(1.05);
+}
+
+/* Estilo principal de la página */
+main {
+    padding: 40px 20px;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Sección de Software */
+.software {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgb(230, 59, 59);
+    text-align: center;
+}
+
+.software h1 {
+    font-size: 36px;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+.software p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.software h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.software ul {
+    list-style: none;
+    padding: 0;
+}
+
+.software ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.software ul li:before {
+    content: "•";
+    color: #ff4d4d;
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+    top: 0;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .software {
+        padding: 15px;
+    }
+
+    .software h1 {
+        font-size: 28px;
+    }
+
+    .software h2 {
+        font-size: 24px;
+    }
+
+    .software p {
+        font-size: 16px;
+    }
+}

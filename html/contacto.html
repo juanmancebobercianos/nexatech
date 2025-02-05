@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Nexatech</title>
+    <link rel="stylesheet" href="/css/contacto.css"> <!-- Archivo CSS separado -->
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <img src="/img/logo.jpeg" alt="Logo">
+        <nav>
+            <a href="sobre-nosotros.html" class="btn">Sobre Nosotros</a>
+            <a href="contacto.html" class="btn">Contacto</a>
+            <a href="inicio.html" class="btn-inicio">Volver a Inicio</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="formulario-contacto">
+            <h1>Contáctanos</h1>
+            <p>Si tienes alguna pregunta o deseas más información sobre nuestros servicios, no dudes en contactarnos. ¡Estamos aquí para ayudarte!</p>
+            
+            <form action="#" method="POST" class="contact-form">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required placeholder="Asunto de tu mensaje">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí"></textarea>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer con iconos personalizados -->
+    <footer>
+        <a href="https://wa.me/099302406" target="_blank">
+            <img src="/img/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://facebook.com/TU_PAGINA" target="_blank">
+            <img src="/img/facebook.png" alt="Facebook">
+        </a>
+        <a href="mailto:contacto@nexatech.com.uy">
+            <img src="/img/mail.png" alt="Correo">
+        </a>
+        <a href="https://instagram.com/TU_PERFIL" target="_blank">
+            <img src="/img/instagram.png" alt="Instagram">
+        </a>
+    </footer>
+
+</body>
+</html>

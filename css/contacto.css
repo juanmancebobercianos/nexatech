@@ -1,0 +1,176 @@
+/* Estilo del encabezado */
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 20px;
+}
+
+/* Logo en el header */
+header img {
+    width: 200px;
+    height: auto;
+}
+
+/* Botones en el Header */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #e03e3e;
+    transform: scale(1.05);
+}
+
+/* Botón Volver a Inicio */
+.btn-inicio {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-inicio:hover {
+    background-color: #c79f31;
+    transform: scale(1.05);
+}
+
+/* Estilo para el formulario de contacto */
+main {
+    padding: 40px 20px;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Sección del formulario */
+.formulario-contacto {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(243, 29, 29);
+    text-align: center;
+}
+
+.formulario-contacto h1 {
+    font-size: 36px;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff4d4d;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #e03e3e;
+    transform: scale(1.05);
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .formulario-contacto {
+        padding: 20px;
+    }
+
+    .formulario-contacto h1 {
+        font-size: 28px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+}
