@@ -30,7 +30,7 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     font-size: 100px;
     font-weight: bold;
-    color: rgb(255, 8, 90);
+    color: rgb(224, 31, 39);
     text-shadow: 
         -2px -2px 0 rgb(253, 253, 253), 
          2px -2px 0 rgb(255, 255, 255), 
@@ -51,8 +51,8 @@ body, html {
     overflow: hidden;
     display: inline-block;
     opacity: 0;
-    text-shadow: 2px 2px 10px rgba(0, 255, 0, 0.7), 
-                 -2px -2px 10px rgba(255, 0, 0, 0.7);
+    text-shadow: 2px 2px 10px rgb(224, 31, 39),
+                 -2px -2px 10px rgb(224, 31, 39);
     animation: fadeInUp 1s ease-in-out forwards 0.5s, typing 2s steps(25, end) forwards 1s;
 }
 
@@ -63,7 +63,7 @@ body, html {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(90deg, rgb(255, 0, 98), rgb(233, 31, 65));
+    background: linear-gradient(90deg, rgb(224, 31, 39), rgb(224, 31, 39));
     border: none;
     border-radius: 35px;
     cursor: pointer;

@@ -181,7 +181,7 @@ nav {
 }
 
 .btn {
-    background-color: #ff4d4d;
+    background-color: #f3303a;
     color: rgb(5, 5, 5);
     padding: 12px 24px;
     text-decoration: none;
@@ -194,7 +194,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #ec1212;
+    background-color: #53242c;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
