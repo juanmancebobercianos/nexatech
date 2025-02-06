@@ -150,17 +150,6 @@ body, html {
         margin: 0 auto;
     }
 
-    /* Dividir el subtítulo en dos líneas a partir de 480px */
-    .subtitulo::before {
-        content: "Transformamos tu idea"; /* Primera línea */
-        display: block;
-    }
-
-    .subtitulo::after {
-        content: "en soluciones informáticas"; /* Segunda línea */
-        display: block;
-    }
-
     .btn-entrar {
         font-size: 16px;
         padding: 12px 25px;

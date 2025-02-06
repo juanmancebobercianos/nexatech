@@ -118,21 +118,89 @@ footer img:hover {
     opacity: 0.8;
 }
 
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y los botones a la derecha */
+    align-items: center; /* Centra verticalmente */
+    height: 100px;
+    padding-left: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben */
+}
+
+/* Logo en el header */
+header img {
+    width: 200px;
+    height: auto;
+    transition: width 0.3s ease; /* Suaviza el ajuste en pantallas pequeñas */
+}
+
+/* Botones en el Header */
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Permite que los botones se acomoden en varias líneas */
+    justify-content: center;
+}
+
+.btn {
+    background-color: #ff4d4d;
+    color: rgb(5, 5, 5);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
+    white-space: nowrap; /* Evita que el texto del botón se divida en varias líneas */
+}
+
+.btn:hover {
+    background-color: #ec1212;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-    .aplicaciones {
-        padding: 15px;
+    header {
+        flex-direction: column;
+        height: auto; /* Permite que el header se expanda si es necesario */
+        text-align: center;
+        padding: 10px;
     }
 
-    .aplicaciones h1 {
-        font-size: 28px;
+    header img {
+        width: 150px; /* Reduce el tamaño del logo en pantallas pequeñas */
+        margin-bottom: 10px;
     }
 
-    .aplicaciones h2 {
-        font-size: 24px;
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
-    .aplicaciones p {
-        font-size: 16px;
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px; /* Reduce el tamaño del texto en botones */
     }
 }
+
