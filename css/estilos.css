@@ -105,6 +105,11 @@ body, html {
     }
     .subtitulo {
         font-size: 26px;
+        text-align: center;
+        white-space: normal; /* Permite que el texto se ajuste */
+        word-wrap: break-word; /* Ajusta el texto largo */
+        max-width: 90%;
+        margin: 0 auto;
     }
     .btn-entrar {
         font-size: 22px;
@@ -118,12 +123,16 @@ body, html {
     }
     .subtitulo {
         font-size: 22px;
-        padding: 0 10px; /* Añadir margen lateral para evitar cortes */
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+        max-width: 85%;
+        margin: 0 auto;
     }
     .btn-entrar {
         font-size: 20px;
         padding: 14px 35px;
-        margin-top: 50px; /* Reduce la distancia del botón */
+        margin-top: 50px;
     }
 }
 
@@ -134,12 +143,28 @@ body, html {
     }
     .subtitulo {
         font-size: 18px;
-        padding: 0 10px;
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+        max-width: 80%;
+        margin: 0 auto;
     }
+
+    /* Dividir el subtítulo en dos líneas a partir de 480px */
+    .subtitulo::before {
+        content: "Transformamos tu idea"; /* Primera línea */
+        display: block;
+    }
+
+    .subtitulo::after {
+        content: "en soluciones informáticas"; /* Segunda línea */
+        display: block;
+    }
+
     .btn-entrar {
         font-size: 16px;
         padding: 12px 25px;
-        margin-top: 40px; /* Ajusta la distancia para evitar desplazamientos */
+        margin-top: 40px;
     }
 }
 
@@ -150,7 +175,11 @@ body, html {
     }
     .subtitulo {
         font-size: 16px;
-        padding: 0 15px;
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+        max-width: 75%;
+        margin: 0 auto;
     }
     .btn-entrar {
         font-size: 14px;
@@ -158,6 +187,8 @@ body, html {
         margin-top: 30px;
     }
 }
+
+
 
 
 
