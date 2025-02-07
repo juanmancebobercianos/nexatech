@@ -48,7 +48,7 @@ body, html {
     color: rgb(252, 252, 252);
     text-shadow: 
         -2px -2px 0 rgb(21, 216, 241), 
-         2px -2px 0 rgb(21, 216, 241), 
+         2px -2px 0 rgb(255, 251, 253), 
         -2px  2px 0 white, 
          2px  2px 0 white;
 }
@@ -78,7 +78,7 @@ body, html {
 
 .btn-entrar:hover {
     transform: scale(1.15);
-    box-shadow: 0 0 20px rgba(52, 241, 28, 0.7);
+    box-shadow: 0 0 100px rgba(15, 229, 245, 0.959);
 }
 
 /* Estilos responsive mejorados */
