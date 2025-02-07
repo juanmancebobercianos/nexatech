@@ -22,7 +22,7 @@ nav {
 }
 
 .btn, .btn-inicio {
-    background-color: #ff4d4d; /* Rojo vibrante */
+    background-color: #ec1a36; /* Rojo vibrante */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -58,7 +58,7 @@ main {
 
 .web h1 {
     font-size: 36px;
-    color: #ff4d4d;
+    color: #dab5b5;
     margin-bottom: 20px;
 }
 

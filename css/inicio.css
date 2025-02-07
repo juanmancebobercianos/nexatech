@@ -36,7 +36,7 @@ nav {
 }
 
 .btn {
-    background-color: #ff4d4d; /* Rojo vibrante */
+    background-color: #15f5ea; /* Rojo vibrante */
     color: rgb(5, 5, 5);
     padding: 12px 24px; /* Ajusté un poco el padding para que se vean más elegantes */
     text-decoration: none;
@@ -48,7 +48,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #ec1212;
+    background-color: #c9b0b0;
     transform: scale(1.05); /* Efecto de aumento */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
 }
