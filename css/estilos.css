@@ -46,19 +46,14 @@ body, html {
     font-size: 100px;
     font-weight: bold;
     color: rgb(252, 252, 252);
-    text-shadow: 
-        -2px -2px 0 rgb(21, 216, 241), 
-         2px -2px 0 rgb(255, 251, 253), 
-        -2px  2px 0 white, 
-         2px  2px 0 white;
 }
 
 /* Estilo del subtítulo */
 .subtitulo {
     font-size: 35px;
     margin-top: 10px;
-    text-shadow: 2px 2px 10px rgb(30, 200, 243),
-                 -2px -2px 10px rgb(224, 31, 39);
+    text-shadow: 2px 2px 10px rgb(50, 255, 232),
+                 -2px -2px 10px rgb(50, 255, 232);
 }
 
 /* Botón "Entrar" */
@@ -67,8 +62,8 @@ body, html {
     padding: 18px 45px;
     font-size: 24px;
     font-weight: bold;
-    color: white;
-    background: linear-gradient(90deg, rgb(224, 31, 39), rgb(224, 31, 39));
+    color: rgb(6, 6, 6);
+    background: linear-gradient(90deg, rgb(50, 255, 232), rgb(50, 255, 232));
     border: none;
     border-radius: 35px;
     cursor: pointer;

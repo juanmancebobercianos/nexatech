@@ -22,8 +22,8 @@ nav {
 }
 
 .btn, .btn-inicio {
-    background-color: #ff4d4d; /* Rojo vibrante */
-    color: white;
+    background-color: #0ef5fd; /* Rojo vibrante */
+    color: rgb(10, 10, 10);
     padding: 10px 20px;
     text-decoration: none;
     font-size: 16px;
@@ -33,7 +33,7 @@ nav {
 }
 
 .btn:hover, .btn-inicio:hover {
-    background-color: #e03e3e;
+    background-color: #17d8e6;
     transform: scale(1.05);
 }
 
@@ -52,13 +52,13 @@ main {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 8px 18px rgb(230, 59, 59);
-    text-align: center;
+    box-shadow: 0 8px 18px rgb(9, 240, 228);
+    text-align: left;
 }
 
 .aplicaciones h1 {
     font-size: 36px;
-    color: #ff4d4d;
+    color: #0d0e0e;
     margin-bottom: 20px;
 }
 
@@ -88,7 +88,7 @@ main {
 
 .aplicaciones ul li:before {
     content: "•";
-    color: #ff4d4d;
+    color: #1af5f5;
     position: absolute;
     left: 0;
     font-size: 25px;
@@ -160,7 +160,7 @@ nav {
 }
 
 .btn {
-    background-color: #ff4d4d;
+    background-color: #12e8f0;
     color: rgb(5, 5, 5);
     padding: 12px 24px;
     text-decoration: none;
@@ -173,7 +173,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #ec1212;
+    background-color: #14f3f3;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

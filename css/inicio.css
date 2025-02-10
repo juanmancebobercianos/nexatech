@@ -17,48 +17,57 @@ header {
     background-color: black;
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Alinea el logo a la izquierda y los botones a la derecha */
-    align-items: center; /* Centra verticalmente */
-    height: 100px; /* Ajusta la altura si es necesario */
-    padding-left: 20px; /* Espacio desde el borde izquierdo */
-}
-
-/* Logo en el header */
-header img {
-    width: 200px; /* Ajusta el tamaño según necesites */
-    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 20px;
+    flex-wrap: wrap;
 }
 
 /* Botones en el Header */
 nav {
     display: flex;
     gap: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .btn {
-    background-color: #15f5ea; /* Rojo vibrante */
+    background-color: #20c997; /* Verde agua */
     color: rgb(5, 5, 5);
-    padding: 12px 24px; /* Ajusté un poco el padding para que se vean más elegantes */
+    padding: 12px 24px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 8px; /* Bordes más redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
+    white-space: nowrap;
 }
 
 .btn:hover {
-    background-color: #c9b0b0;
-    transform: scale(1.05); /* Efecto de aumento */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
+    background-color: #17a589;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-
-
 /* Estilo de las secciones */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
 .servicio {
     padding: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
 }
 
 .servicio img {
@@ -80,23 +89,23 @@ nav {
 }
 
 .servicio {
-    cursor: pointer; /* Hace que el cursor cambie al puntero al pasar sobre la sección */
+    cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
 
 .servicio:hover {
-    transform: scale(1.05); /* Pequeño zoom al pasar el mouse */
+    transform: scale(1.05);
 }
-
 
 /* Estilo del footer */
 footer {
     background-color: black;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 200px; /* Ajusta la separación del footer */
 }
 
 /* Estilos para los enlaces del footer */
@@ -107,100 +116,140 @@ footer a {
 
 /* Estilos para las imágenes de los iconos */
 footer img {
-    width: 40px; /* Tamaño uniforme */
-    height: 40px;
-    object-fit: contain; /* Mantiene la proporción */
+    width: 60px;
+    height: 70px;
+    object-fit: contain;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Efecto hover en los iconos */
 footer img:hover {
-    transform: scale(1.2); /* Aumenta ligeramente el tamaño */
-    opacity: 0.8; /* Reduce la opacidad para un efecto sutil */
-}
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
-body, html {
-    font-family: Arial, sans-serif;
-    color: white;
-    background-color: black;
-    text-align: center;
-}
-
-/* Estilo del encabezado */
-header {
-    background-color: black;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between; /* Alinea el logo a la izquierda y los botones a la derecha */
-    align-items: center; /* Centra verticalmente */
-    height: 100px;
-    padding-left: 20px;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben */
-}
-
-/* Logo en el header */
-header img {
-    width: 200px;
-    height: auto;
-    transition: width 0.3s ease; /* Suaviza el ajuste en pantallas pequeñas */
-}
-
-/* Botones en el Header */
-nav {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap; /* Permite que los botones se acomoden en varias líneas */
-    justify-content: center;
-}
-
-.btn {
-    background-color: #ff4d4d;
-    color: rgb(5, 5, 5);
-    padding: 12px 24px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
-    white-space: nowrap; /* Evita que el texto del botón se divida en varias líneas */
-}
-
-.btn:hover {
-    background-color: #ec1212;
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
 
 /* Responsive */
+@media (max-width: 1200px) {
+    /* Ajustes para pantallas grandes como notebooks */
+    .contenedor-servicios {
+        flex-wrap: wrap; /* Permite que los servicios se acomoden si no caben */
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .servicio {
+        width: 30%; /* Ajusta el tamaño sin que se amontonen */
+    }
+}
+
+@media (max-width: 992px) {
+    /* Ajustes para pantallas medianas como tablets */
+    .servicio {
+        width: 45%; /* Para que queden dos por fila */
+    }
+
+    .botones-header {
+        justify-content: center; /* Centra los botones si hay espacio */
+    }
+}
+
 @media (max-width: 768px) {
+    /* Ajustes para pantallas pequeñas */
     header {
         flex-direction: column;
-        height: auto; /* Permite que el header se expanda si es necesario */
+        height: auto;
         text-align: center;
         padding: 10px;
     }
 
     header img {
-        width: 150px; /* Reduce el tamaño del logo en pantallas pequeñas */
+        width: 150px;
         margin-bottom: 10px;
     }
 
     nav {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap; /* Permite que los botones se acomoden */
+        justify-content: center;
         gap: 10px;
     }
 
     .btn {
         padding: 10px 20px;
-        font-size: 14px; /* Reduce el tamaño del texto en botones */
+        font-size: 14px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    /* Ajuste para los botones Sobre Nosotros y Contacto */
+    .botones-header {
+        display: flex;
+        justify-content: center; /* Alineados en el centro */
+        gap: 10px;
+        flex-wrap: wrap; /* Permite que se acomoden sin estorbar */
+    }
+
+    .contenedor-servicios {
+        flex-direction: column; /* Servicios en columna */
+        gap: 20px;
+    }
+
+    .servicio {
+        width: 90%; /* Ocupan casi todo el ancho */
+        margin: auto;
     }
 }
+
+@media (max-width: 480px) {
+    /* Ajustes para pantallas extra pequeñas */
+    .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .servicio h2 {
+        font-size: 20px;
+    }
+
+    .servicio p {
+        font-size: 16px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center; /* Centra los iconos horizontalmente */
+        align-items: center;
+        gap: 05px; /* Espacio entre los iconos */
+        background-color: black;
+        padding: 10px;
+        flex-wrap: wrap; /* Permite que los iconos se ajusten si no caben en una sola línea */
+    }
+    
+    footer img {
+        width: 50px; /* Tamaño de los iconos */
+        height: 50px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    footer img:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    
+    /* Asegurar que en pantallas pequeñas siga siendo horizontal */
+    @media (max-width: 768px) {
+        footer {
+            flex-direction: row; /* Mantiene los iconos en línea */
+            flex-wrap: wrap; /* Si no caben, se acomodan en varias filas */
+            justify-content: center; /* Centra los elementos */
+        }
+    }
+    
+
+   
+
+}
+
 

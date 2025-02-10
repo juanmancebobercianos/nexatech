@@ -9,38 +9,17 @@ header {
     padding-left: 20px;
 }
 
-/* Logo en el header */
-header img {
-    width: 200px;
-    height: auto;
-}
-
 /* Botones en el Header */
 nav {
     display: flex;
     gap: 15px;
 }
 
-.btn {
-    background-color: #ff4d4d;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease, transform 0.2s;
-}
-
-.btn:hover {
-    background-color: #e03e3e;
-    transform: scale(1.05);
-}
 
 /* Botón Volver a Inicio */
 .btn-inicio {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #11f0dd;
+    color: rgb(8, 8, 8);
     padding: 8px 16px;
     text-decoration: none;
     font-size: 14px;
@@ -51,7 +30,7 @@ nav {
 }
 
 .btn-inicio:hover {
-    background-color: #c79f31;
+    background-color: #16ebce;
     transform: scale(1.05);
 }
 
@@ -70,13 +49,13 @@ main {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgb(243, 29, 29);
+    box-shadow: 0 10px 20px rgb(5, 233, 233);
     text-align: center;
 }
 
 .formulario-contacto h1 {
     font-size: 36px;
-    color: #ff4d4d;
+    color: #0c0b0b;
     margin-bottom: 20px;
 }
 
@@ -108,13 +87,13 @@ main {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #ff4d4d;
+    border-color: #0ee9d7;
     outline: none;
 }
 
 .contact-form button {
-    background-color: #ff4d4d;
-    color: white;
+    background-color: #13e7e7;
+    color: rgb(8, 8, 8);
     padding: 12px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -124,7 +103,7 @@ main {
 }
 
 .contact-form button:hover {
-    background-color: #e03e3e;
+    background-color: #0ddceb;
     transform: scale(1.05);
 }
 
@@ -193,7 +172,7 @@ nav {
 }
 
 .btn {
-    background-color: #ff4d4d;
+    background-color: #10eeee;
     color: rgb(5, 5, 5);
     padding: 12px 24px;
     text-decoration: none;
@@ -206,7 +185,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #ec1212;
+    background-color: #0feccf;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

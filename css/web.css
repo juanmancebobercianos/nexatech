@@ -9,11 +9,6 @@ header {
     padding-left: 20px;
 }
 
-/* Logo en el header */
-header img {
-    width: 200px;
-    height: auto;
-}
 
 /* Botones en el Header */
 nav {
@@ -22,8 +17,8 @@ nav {
 }
 
 .btn, .btn-inicio {
-    background-color: #ec1a36; /* Rojo vibrante */
-    color: white;
+    background-color: #1aece1; /* Rojo vibrante */
+    color: rgb(8, 8, 8);
     padding: 10px 20px;
     text-decoration: none;
     font-size: 16px;
@@ -33,7 +28,7 @@ nav {
 }
 
 .btn:hover, .btn-inicio:hover {
-    background-color: #e03e3e;
+    background-color: #18f5f5;
     transform: scale(1.05);
 }
 
@@ -52,13 +47,13 @@ main {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 8px 18px rgb(230, 59, 59);
-    text-align: center;
+    box-shadow: 0 8px 18px rgb(9, 253, 221);
+    text-align: left;
 }
 
 .web h1 {
     font-size: 36px;
-    color: #dab5b5;
+    color: #080808;
     margin-bottom: 20px;
 }
 
@@ -88,7 +83,7 @@ main {
 
 .web ul li:before {
     content: "•";
-    color: #ff4d4d;
+    color: #21fce9;
     position: absolute;
     left: 0;
     font-size: 25px;
@@ -160,8 +155,8 @@ nav {
 }
 
 .btn {
-    background-color: #ff4d4d;
-    color: rgb(5, 5, 5);
+    background-color: #25ebeb;
+    color: rgb(15, 15, 15);
     padding: 12px 24px;
     text-decoration: none;
     font-size: 16px;
@@ -173,7 +168,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #ec1212;
+    background-color: #12c0ec;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

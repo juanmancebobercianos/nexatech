@@ -22,8 +22,8 @@ nav {
 }
 
 .btn, .btn-inicio {
-    background-color: #ff4d4d; /* Rojo vibrante */
-    color: white;
+    background-color: #11f0f0; /* Rojo vibrante */
+    color: rgb(10, 10, 10);
     padding: 10px 20px;
     text-decoration: none;
     font-size: 16px;
@@ -33,7 +33,7 @@ nav {
 }
 
 .btn:hover, .btn-inicio:hover {
-    background-color: #e03e3e;
+    background-color: #14edf5;
     transform: scale(1.05);
 }
 
@@ -52,13 +52,13 @@ main {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 8px 18px rgb(230, 59, 59);
-    text-align: center;
+    box-shadow: 0 8px 18px rgb(5, 248, 248);
+    text-align: left;
 }
 
 .software h1 {
     font-size: 36px;
-    color: #ff4d4d;
+    color: #0e0d0d;
     margin-bottom: 20px;
 }
 
@@ -88,7 +88,7 @@ main {
 
 .software ul li:before {
     content: "•";
-    color: #ff4d4d;
+    color: #15f1f1;
     position: absolute;
     left: 0;
     font-size: 25px;
@@ -160,20 +160,20 @@ nav {
 }
 
 .btn {
-    background-color: #ff4d4d;
+    background-color: #1cdaf3;
     color: rgb(5, 5, 5);
     padding: 12px 24px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(22, 21, 21, 0.2);
     transition: background 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
     white-space: nowrap; /* Evita que el texto del botón se divida en varias líneas */
 }
 
 .btn:hover {
-    background-color: #ec1212;
+    background-color: #0ff5f5;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

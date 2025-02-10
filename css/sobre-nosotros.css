@@ -9,11 +9,6 @@ header {
     padding-left: 20px; /* Espacio desde el borde izquierdo */
 }
 
-/* Logo en el header */
-header img {
-    width: 200px; /* Ajusta el tamaño según necesites */
-    height: auto;
-}
 
 /* Botones en el Header */
 nav {
@@ -21,26 +16,12 @@ nav {
     gap: 15px;
 }
 
-.btn {
-    background-color: #ff4d4d; /* Rojo vibrante */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease, transform 0.2s;
-}
 
-.btn:hover {
-    background-color: #e03e3e;
-    transform: scale(1.05);
-}
 
 /* Botón Volver a Inicio */
 .btn-inicio {
-    background-color: #4CAF50; /* Verde para contraste */
-    color: white;
+    background-color: #13ebd9; /* Verde para contraste */
+    color: rgb(14, 13, 13);
     padding: 8px 16px; /* Tamaño más pequeño */
     text-decoration: none;
     font-size: 14px; /* Fuente más pequeña */
@@ -51,7 +32,7 @@ nav {
 }
 
 .btn-inicio:hover {
-    background-color: #45a049;
+    background-color: #10f3e8;
     transform: scale(1.05);
 }
 
@@ -69,17 +50,17 @@ main {
 .sobre-nosotros {
     max-width: 900px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     background-color: white;
     border-radius: 50px;
-    box-shadow: 0 8px 18px rgb(230, 59, 59);
+    box-shadow: 0 8px 18px rgb(7, 238, 238);
 }
 
 .sobre-nosotros h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #ff4d4d;
+    color: #111111;
 }
 
 .sobre-nosotros p {
@@ -108,7 +89,7 @@ main {
 
 .sobre-nosotros ul li:before {
     content: "•";
-    color: #ff4d4d;
+    color: #0dd4d4;
     position: absolute;
     left: 0;
     font-size: 25px;
@@ -194,7 +175,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #ff960e;
+    background-color: #15c6cc;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
