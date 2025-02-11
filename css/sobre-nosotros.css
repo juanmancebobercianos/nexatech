@@ -20,7 +20,7 @@ nav {
 
 /* Botón Volver a Inicio */
 .btn-inicio {
-    background-color: #13ebd9; /* Verde para contraste */
+    background-color: rgb(50, 255, 232);
     color: rgb(14, 13, 13);
     padding: 8px 16px; /* Tamaño más pequeño */
     text-decoration: none;
@@ -32,7 +32,7 @@ nav {
 }
 
 .btn-inicio:hover {
-    background-color: #10f3e8;
+    background-color: #df6d40;
     transform: scale(1.05);
 }
 
@@ -54,7 +54,7 @@ main {
     padding: 20px;
     background-color: white;
     border-radius: 50px;
-    box-shadow: 0 8px 18px rgb(7, 238, 238);
+    box-shadow: 0 8px 18px rgb(50, 255, 232);
 }
 
 .sobre-nosotros h1 {
@@ -162,7 +162,7 @@ nav {
 }
 
 .btn {
-    background-color: #30edf3;
+    background-color: rgb(50, 255, 232);
     color: rgb(5, 5, 5);
     padding: 12px 24px;
     text-decoration: none;
@@ -175,7 +175,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #15c6cc;
+    background-color:#df6d40;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

@@ -17,7 +17,7 @@ nav {
 }
 
 .btn, .btn-inicio {
-    background-color: #1aece1; /* Rojo vibrante */
+    background-color: rgb(50, 255, 232);
     color: rgb(8, 8, 8);
     padding: 10px 20px;
     text-decoration: none;
@@ -28,7 +28,7 @@ nav {
 }
 
 .btn:hover, .btn-inicio:hover {
-    background-color: #18f5f5;
+    background-color: #df6d40;
     transform: scale(1.05);
 }
 
@@ -47,7 +47,7 @@ main {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 8px 18px rgb(9, 253, 221);
+    box-shadow: 0 8px 18px rgb(50, 255, 232);
     text-align: left;
 }
 
@@ -155,7 +155,7 @@ nav {
 }
 
 .btn {
-    background-color: #25ebeb;
+    background-color: rgb(50, 255, 232);
     color: rgb(15, 15, 15);
     padding: 12px 24px;
     text-decoration: none;
@@ -168,7 +168,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #12c0ec;
+    background-color: #df6d40;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

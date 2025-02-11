@@ -1,0 +1,176 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Estilos del Header */
+header {
+    background-color: rgb(50, 255, 232);
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que los botones se acomoden en pantallas pequeñas */
+}
+
+.btn, .promo-btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #d81717;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #f38932;
+}
+
+/* Botón Promos! más moderno */
+.promo-btn {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(255, 157, 65, 0.5);
+    transition: all 0.3s ease-in-out;
+    padding: 12px 24px;
+}
+
+.promo-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 65, 108, 0.7);
+}
+
+/* Estilos de la Página de Promos */
+main {
+    padding: 40px;
+}
+
+/* Estilos Generales */
+h1 {
+    font-size: 2.5em;
+    color: #ff4b2b;
+    text-align: center;
+    margin: 20px 0;
+    word-wrap: break-word;
+}
+
+
+/* Estilos de cada promoción */
+.promo {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.promo h2 {
+    color: #ff4b2b;
+}
+
+/* Botón dentro de cada promo */
+.btn-promo {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-promo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 65, 108, 0.7);
+}
+
+/* Video de la promoción - Más pequeño y en loop automático */
+.promo-video {
+    width: 90%;
+    max-width: 350px; /* Tamaño más reducido en móviles */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* -------------------------------------- */
+/*          📱 RESPONSIVE DESIGN         */
+/* -------------------------------------- */
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .promo {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .promo-video {
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Para pantallas medianas (tablets y notebooks) */
+@media (max-width: 1024px) {
+    nav {
+        gap: 15px;
+    }
+
+    .promo {
+        width: 85%;
+    }
+
+    .promo-video {
+        max-width: 350px;
+    }
+}
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em; /* Reduce el tamaño para mejor legibilidad */
+        padding: 0 10px; /* Evita que el texto se pegue a los bordes */
+    }
+}
+
+/* Para pantallas medianas (tablets y notebooks) */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.2em; /* Ajusta un poco el tamaño en tablets */
+    }
+}
+
