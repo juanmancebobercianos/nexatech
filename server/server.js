@@ -12,8 +12,8 @@ app.post('/send-email', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'Gmail', // Puedes usar cualquier servicio SMTP
         auth: {
-            user: 'tucorreo@gmail.com', // Reemplaza con tu correo
-            pass: 'contraseña_de_tu_correo' // Reemplaza con tu contraseña
+            user: 'contacto@nexatech.com.uy', // Reemplaza con tu correo
+            pass: 'NexaDes2025*' // Reemplaza con tu contraseña
         }
     });
 
@@ -26,7 +26,7 @@ app.post('/send-email', (req, res) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.log(error);
+            console.log('Error al enviar el correo:', error); // Agrega esta línea
             return res.status(500).send('Error al enviar el correo.');
         }
         res.status(200).send('Correo enviado correctamente.');
